@@ -1,0 +1,17 @@
+[2023-12-05T18:21:06.076+0000] {processor.py:157} INFO - Started process (PID=15657) to work on /home/ubuntu/airflow/dags/etl.py
+[2023-12-05T18:21:06.077+0000] {processor.py:829} INFO - Processing file /home/ubuntu/airflow/dags/etl.py for tasks to queue
+[2023-12-05T18:21:06.078+0000] {logging_mixin.py:154} INFO - [2023-12-05T18:21:06.077+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/etl.py
+[2023-12-05T18:21:06.084+0000] {logging_mixin.py:154} INFO - [2023-12-05T18:21:06.081+0000] {dagbag.py:346} ERROR - Failed to import: /home/ubuntu/airflow/dags/etl.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/airflow/dags/etl.py", line 7
+    'start_date': datetime(2023, 5. 12),
+                                 ^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2023-12-05T18:21:06.089+0000] {processor.py:841} WARNING - No viable dags retrieved from /home/ubuntu/airflow/dags/etl.py
+[2023-12-05T18:21:06.132+0000] {processor.py:179} INFO - Processing /home/ubuntu/airflow/dags/etl.py took 0.067 seconds
