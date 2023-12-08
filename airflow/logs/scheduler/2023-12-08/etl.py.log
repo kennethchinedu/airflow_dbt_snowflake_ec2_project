@@ -449,3 +449,83 @@ TypeError: Left hand side (<Task(PythonOperator): extract_data_task>) is not an 
 [2023-12-08T21:06:48.289+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:06:48.289+0000] {dag.py:2941} INFO - Sync 1 DAGs
 [2023-12-08T21:06:48.313+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:06:48.313+0000] {dag.py:3722} INFO - Setting next_dagrun for weather_dag to 2023-12-08T00:00:00+00:00, run_after=2023-12-09T00:00:00+00:00
 [2023-12-08T21:06:48.340+0000] {processor.py:179} INFO - Processing /home/ubuntu/airflow/dags/etl.py took 0.225 seconds
+[2023-12-08T21:07:18.471+0000] {processor.py:157} INFO - Started process (PID=9704) to work on /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:07:18.473+0000] {processor.py:829} INFO - Processing file /home/ubuntu/airflow/dags/etl.py for tasks to queue
+[2023-12-08T21:07:18.480+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:07:18.475+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:07:18.508+0000] {logging_mixin.py:154} WARNING - /usr/local/lib/python3.10/dist-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2023-12-08T21:07:18.517+0000] {processor.py:839} INFO - DAG(s) dict_keys(['weather_dag']) retrieved from /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:07:18.682+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:07:18.682+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-08T21:07:18.709+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:07:18.709+0000] {dag.py:3722} INFO - Setting next_dagrun for weather_dag to 2023-12-08T00:00:00+00:00, run_after=2023-12-09T00:00:00+00:00
+[2023-12-08T21:07:18.745+0000] {processor.py:179} INFO - Processing /home/ubuntu/airflow/dags/etl.py took 0.281 seconds
+[2023-12-08T21:07:48.836+0000] {processor.py:157} INFO - Started process (PID=9865) to work on /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:07:48.837+0000] {processor.py:829} INFO - Processing file /home/ubuntu/airflow/dags/etl.py for tasks to queue
+[2023-12-08T21:07:48.838+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:07:48.838+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:07:48.851+0000] {logging_mixin.py:154} WARNING - /usr/local/lib/python3.10/dist-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2023-12-08T21:07:48.855+0000] {processor.py:839} INFO - DAG(s) dict_keys(['weather_dag']) retrieved from /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:07:48.959+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:07:48.959+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-08T21:07:49.000+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:07:48.999+0000] {dag.py:3722} INFO - Setting next_dagrun for weather_dag to 2023-12-08T00:00:00+00:00, run_after=2023-12-09T00:00:00+00:00
+[2023-12-08T21:07:49.025+0000] {processor.py:179} INFO - Processing /home/ubuntu/airflow/dags/etl.py took 0.193 seconds
+[2023-12-08T21:08:19.129+0000] {processor.py:157} INFO - Started process (PID=9975) to work on /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:08:19.130+0000] {processor.py:829} INFO - Processing file /home/ubuntu/airflow/dags/etl.py for tasks to queue
+[2023-12-08T21:08:19.131+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:08:19.131+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:08:19.144+0000] {logging_mixin.py:154} WARNING - /usr/local/lib/python3.10/dist-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2023-12-08T21:08:19.148+0000] {processor.py:839} INFO - DAG(s) dict_keys(['weather_dag']) retrieved from /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:08:19.280+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:08:19.280+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-08T21:08:19.305+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:08:19.305+0000] {dag.py:3722} INFO - Setting next_dagrun for weather_dag to 2023-12-08T00:00:00+00:00, run_after=2023-12-09T00:00:00+00:00
+[2023-12-08T21:08:19.327+0000] {processor.py:179} INFO - Processing /home/ubuntu/airflow/dags/etl.py took 0.202 seconds
+[2023-12-08T21:08:49.494+0000] {processor.py:157} INFO - Started process (PID=10117) to work on /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:08:49.495+0000] {processor.py:829} INFO - Processing file /home/ubuntu/airflow/dags/etl.py for tasks to queue
+[2023-12-08T21:08:49.496+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:08:49.495+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:08:49.518+0000] {logging_mixin.py:154} WARNING - /usr/local/lib/python3.10/dist-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2023-12-08T21:08:49.532+0000] {processor.py:839} INFO - DAG(s) dict_keys(['weather_dag']) retrieved from /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:08:49.698+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:08:49.698+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-08T21:08:49.718+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:08:49.718+0000] {dag.py:3722} INFO - Setting next_dagrun for weather_dag to 2023-12-08T00:00:00+00:00, run_after=2023-12-09T00:00:00+00:00
+[2023-12-08T21:08:49.740+0000] {processor.py:179} INFO - Processing /home/ubuntu/airflow/dags/etl.py took 0.249 seconds
+[2023-12-08T21:09:19.891+0000] {processor.py:157} INFO - Started process (PID=10153) to work on /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:09:19.892+0000] {processor.py:829} INFO - Processing file /home/ubuntu/airflow/dags/etl.py for tasks to queue
+[2023-12-08T21:09:19.893+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:09:19.893+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:09:19.907+0000] {logging_mixin.py:154} WARNING - /usr/local/lib/python3.10/dist-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2023-12-08T21:09:19.912+0000] {processor.py:839} INFO - DAG(s) dict_keys(['weather_dag']) retrieved from /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:09:20.034+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:09:20.034+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-08T21:09:20.054+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:09:20.054+0000] {dag.py:3722} INFO - Setting next_dagrun for weather_dag to 2023-12-08T00:00:00+00:00, run_after=2023-12-09T00:00:00+00:00
+[2023-12-08T21:09:20.075+0000] {processor.py:179} INFO - Processing /home/ubuntu/airflow/dags/etl.py took 0.188 seconds
+[2023-12-08T21:09:50.148+0000] {processor.py:157} INFO - Started process (PID=10241) to work on /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:09:50.149+0000] {processor.py:829} INFO - Processing file /home/ubuntu/airflow/dags/etl.py for tasks to queue
+[2023-12-08T21:09:50.150+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:09:50.150+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:09:50.167+0000] {logging_mixin.py:154} WARNING - /usr/local/lib/python3.10/dist-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2023-12-08T21:09:50.173+0000] {processor.py:839} INFO - DAG(s) dict_keys(['weather_dag']) retrieved from /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:09:50.269+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:09:50.269+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-08T21:09:50.287+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:09:50.287+0000] {dag.py:3722} INFO - Setting next_dagrun for weather_dag to 2023-12-08T00:00:00+00:00, run_after=2023-12-09T00:00:00+00:00
+[2023-12-08T21:09:50.312+0000] {processor.py:179} INFO - Processing /home/ubuntu/airflow/dags/etl.py took 0.167 seconds
+[2023-12-08T21:10:20.403+0000] {processor.py:157} INFO - Started process (PID=10242) to work on /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:10:20.404+0000] {processor.py:829} INFO - Processing file /home/ubuntu/airflow/dags/etl.py for tasks to queue
+[2023-12-08T21:10:20.405+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:10:20.404+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:10:20.417+0000] {logging_mixin.py:154} WARNING - /usr/local/lib/python3.10/dist-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2023-12-08T21:10:20.422+0000] {processor.py:839} INFO - DAG(s) dict_keys(['weather_dag']) retrieved from /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:10:20.525+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:10:20.525+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-08T21:10:20.545+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:10:20.545+0000] {dag.py:3722} INFO - Setting next_dagrun for weather_dag to 2023-12-08T00:00:00+00:00, run_after=2023-12-09T00:00:00+00:00
+[2023-12-08T21:10:20.584+0000] {processor.py:179} INFO - Processing /home/ubuntu/airflow/dags/etl.py took 0.185 seconds
+[2023-12-08T21:10:50.702+0000] {processor.py:157} INFO - Started process (PID=10303) to work on /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:10:50.703+0000] {processor.py:829} INFO - Processing file /home/ubuntu/airflow/dags/etl.py for tasks to queue
+[2023-12-08T21:10:50.704+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:10:50.703+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:10:50.721+0000] {logging_mixin.py:154} WARNING - /usr/local/lib/python3.10/dist-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2023-12-08T21:10:50.728+0000] {processor.py:839} INFO - DAG(s) dict_keys(['weather_dag']) retrieved from /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:10:50.855+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:10:50.855+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-08T21:10:50.901+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:10:50.901+0000] {dag.py:3722} INFO - Setting next_dagrun for weather_dag to 2023-12-08T00:00:00+00:00, run_after=2023-12-09T00:00:00+00:00
+[2023-12-08T21:10:50.940+0000] {processor.py:179} INFO - Processing /home/ubuntu/airflow/dags/etl.py took 0.241 seconds
+[2023-12-08T21:11:21.097+0000] {processor.py:157} INFO - Started process (PID=10312) to work on /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:11:21.098+0000] {processor.py:829} INFO - Processing file /home/ubuntu/airflow/dags/etl.py for tasks to queue
+[2023-12-08T21:11:21.099+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:11:21.098+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:11:21.111+0000] {logging_mixin.py:154} WARNING - /usr/local/lib/python3.10/dist-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2023-12-08T21:11:21.115+0000] {processor.py:839} INFO - DAG(s) dict_keys(['weather_dag']) retrieved from /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:11:21.223+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:11:21.222+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-08T21:11:21.243+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:11:21.243+0000] {dag.py:3722} INFO - Setting next_dagrun for weather_dag to 2023-12-08T00:00:00+00:00, run_after=2023-12-09T00:00:00+00:00
+[2023-12-08T21:11:21.266+0000] {processor.py:179} INFO - Processing /home/ubuntu/airflow/dags/etl.py took 0.173 seconds
+[2023-12-08T21:11:51.385+0000] {processor.py:157} INFO - Started process (PID=10422) to work on /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:11:51.386+0000] {processor.py:829} INFO - Processing file /home/ubuntu/airflow/dags/etl.py for tasks to queue
+[2023-12-08T21:11:51.387+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:11:51.387+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:11:51.404+0000] {logging_mixin.py:154} WARNING - /usr/local/lib/python3.10/dist-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2023-12-08T21:11:51.409+0000] {processor.py:839} INFO - DAG(s) dict_keys(['weather_dag']) retrieved from /home/ubuntu/airflow/dags/etl.py
+[2023-12-08T21:11:51.519+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:11:51.519+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-08T21:11:51.540+0000] {logging_mixin.py:154} INFO - [2023-12-08T21:11:51.540+0000] {dag.py:3722} INFO - Setting next_dagrun for weather_dag to 2023-12-08T00:00:00+00:00, run_after=2023-12-09T00:00:00+00:00
+[2023-12-08T21:11:51.566+0000] {processor.py:179} INFO - Processing /home/ubuntu/airflow/dags/etl.py took 0.185 seconds
