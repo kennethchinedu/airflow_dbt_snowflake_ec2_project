@@ -3,6 +3,7 @@ from datetime import timedelta, datetime
 from airflow.operators.python import PythonOperator 
 from airflow.providers.http.sensors.http import HttpSensor
 from airflow.providers.http.operators.http import SimpleHttpOperator
+from airflow.operators.bash_operator import BashOperator 
 import json, requests
 # from functions.functions import extract_data 
 
@@ -50,7 +51,7 @@ default_args = {
 }
 
 with DAG(
-    'weather_dag',
+    'Zillow_Dag',
     default_args=default_args,
     schedule_interval = '@daily',
     catchup=False ) as dag:
@@ -65,7 +66,13 @@ with DAG(
     extract_data_task = PythonOperator(
         task_id="extract_data_task",
         python_callable= extract_data,
-        op_kwargs={'url':'https://zillow56.p.rapidapi.com/search', 'querystring':{'location':'houston, tx'}, 'headers':api_host_key ,'date_string': dt_now_string}
+        op_kwargs={'url':'https://zillow56.p.rapidapi.com/search', 'querystring':{'location':'lagos, tx'}, 'headers':api_host_key ,'date_string': dt_now_string}
+    )
+    
+    load_file_to_s3 = BashOperator(
+        task_id="load_file_to_s3",
+        bash_command= 'aws s3 mv {{ti.xcom_pull("extract_data_task")[0]}} s3://zillow-analytics-ec2/lagos/',
+        
     )
    
-is_api_available >> extract_data_task
+is_api_available >> extract_data_task >> load_file_to_s3
