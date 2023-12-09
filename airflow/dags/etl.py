@@ -1,10 +1,14 @@
 from airflow import DAG
 from datetime import timedelta, datetime
+import json, requests
 from airflow.operators.python import PythonOperator 
 from airflow.providers.http.sensors.http import HttpSensor
 from airflow.providers.http.operators.http import SimpleHttpOperator
 from airflow.operators.bash_operator import BashOperator 
-import json, requests
+from airflow.providers.amazon.aws.sensors.s3 import S3KeySensor
+
+
+
 # from functions.functions import extract_data 
 
 now = datetime.now()
@@ -72,6 +76,11 @@ with DAG(
     load_file_to_s3 = BashOperator(
         task_id="load_file_to_s3",
         bash_command= 'aws s3 mv {{ti.xcom_pull("extract_data_task")[0]}} s3://zillow-analytics-ec2/lagos/',
+        
+    )
+    
+    is_csv_file_available_in_bucket = S3KeySensor(
+        task_id = 'is_csv_file_available_in_bucket',
         
     )
    
