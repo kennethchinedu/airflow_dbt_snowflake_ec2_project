@@ -1,0 +1,15 @@
+[2023-12-08T22:24:46.769+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Zillow_Dag.is_api_available manual__2023-12-08T22:24:42.707284+00:00 [queued]>
+[2023-12-08T22:24:46.796+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Zillow_Dag.is_api_available manual__2023-12-08T22:24:42.707284+00:00 [queued]>
+[2023-12-08T22:24:46.797+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 3
+[2023-12-08T22:24:46.813+0000] {taskinstance.py:1382} INFO - Executing <Task(SimpleHttpOperator): is_api_available> on 2023-12-08 22:24:42.707284+00:00
+[2023-12-08T22:24:46.816+0000] {standard_task_runner.py:57} INFO - Started process 28579 to run task
+[2023-12-08T22:24:46.821+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'Zillow_Dag', 'is_api_available', 'manual__2023-12-08T22:24:42.707284+00:00', '--job-id', '27', '--raw', '--subdir', 'DAGS_FOLDER/etl.py', '--cfg-path', '/tmp/tmptxjhqn85']
+[2023-12-08T22:24:46.823+0000] {standard_task_runner.py:85} INFO - Job 27: Subtask is_api_available
+[2023-12-08T22:24:46.861+0000] {task_command.py:416} INFO - Running <TaskInstance: Zillow_Dag.is_api_available manual__2023-12-08T22:24:42.707284+00:00 [running]> on host ip-172-31-29-175.eu-north-1.compute.internal
+[2023-12-08T22:24:47.040+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='anamsken60@gmail.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Zillow_Dag' AIRFLOW_CTX_TASK_ID='is_api_available' AIRFLOW_CTX_EXECUTION_DATE='2023-12-08T22:24:42.707284+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-08T22:24:42.707284+00:00'
+[2023-12-08T22:24:47.041+0000] {http.py:164} INFO - Calling HTTP method
+[2023-12-08T22:24:47.046+0000] {base.py:73} INFO - Using connection ID 'weather_api' for task execution.
+[2023-12-08T22:24:47.509+0000] {base.py:73} INFO - Using connection ID 'weather_api' for task execution.
+[2023-12-08T22:24:47.835+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=Zillow_Dag, task_id=is_api_available, execution_date=20231208T222442, start_date=20231208T222446, end_date=20231208T222447
+[2023-12-08T22:24:47.877+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-08T22:24:47.990+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

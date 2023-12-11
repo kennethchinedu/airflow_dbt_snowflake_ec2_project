@@ -1,0 +1,13 @@
+[2023-12-09T01:29:20.275+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Zillow_Dag.extract_data_task manual__2023-12-09T01:29:14.691023+00:00 [queued]>
+[2023-12-09T01:29:20.282+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Zillow_Dag.extract_data_task manual__2023-12-09T01:29:14.691023+00:00 [queued]>
+[2023-12-09T01:29:20.282+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 3
+[2023-12-09T01:29:20.301+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): extract_data_task> on 2023-12-09 01:29:14.691023+00:00
+[2023-12-09T01:29:20.306+0000] {standard_task_runner.py:57} INFO - Started process 48933 to run task
+[2023-12-09T01:29:20.314+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'Zillow_Dag', 'extract_data_task', 'manual__2023-12-09T01:29:14.691023+00:00', '--job-id', '67', '--raw', '--subdir', 'DAGS_FOLDER/etl.py', '--cfg-path', '/tmp/tmp2s4j7ey2']
+[2023-12-09T01:29:20.315+0000] {standard_task_runner.py:85} INFO - Job 67: Subtask extract_data_task
+[2023-12-09T01:29:20.351+0000] {task_command.py:416} INFO - Running <TaskInstance: Zillow_Dag.extract_data_task manual__2023-12-09T01:29:14.691023+00:00 [running]> on host ip-172-31-29-175.eu-north-1.compute.internal
+[2023-12-09T01:29:20.530+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='anamsken60@gmail.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Zillow_Dag' AIRFLOW_CTX_TASK_ID='extract_data_task' AIRFLOW_CTX_EXECUTION_DATE='2023-12-09T01:29:14.691023+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-09T01:29:14.691023+00:00'
+[2023-12-09T01:29:21.781+0000] {python.py:194} INFO - Done. Returned value was: ['/home/ubuntu/response_data_09122023012919.json', 'response_data_09122023012919.csv']
+[2023-12-09T01:29:21.797+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=Zillow_Dag, task_id=extract_data_task, execution_date=20231209T012914, start_date=20231209T012920, end_date=20231209T012921
+[2023-12-09T01:29:21.846+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-09T01:29:21.872+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

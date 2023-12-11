@@ -81,7 +81,15 @@ with DAG(
     
     is_csv_file_available_in_bucket = S3KeySensor(
         task_id = 'is_csv_file_available_in_bucket',
-        
+        bucket_key = '{{ti.xcom_pull("load_file_to_s3")[1]}}',
+        bucket_name = 'cleaned-zillow-data-csv',
+        aws_conn_id = 'aws_s3_connection',
+        wildcard_match=False,
+        timeout=60,
+        poke_interval=5
     )
-   
-is_api_available >> extract_data_task >> load_file_to_s3
+        
+        
+            
+            
+is_api_available >> extract_data_task >> load_file_to_s3 >> is_csv_file_available_in_bucket
