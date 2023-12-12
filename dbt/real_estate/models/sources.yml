@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: real_estate
+    schema: raw 
+    tables: 
+      - name: house_listing
+        identifier: HOUSE_LISITING_RAW
