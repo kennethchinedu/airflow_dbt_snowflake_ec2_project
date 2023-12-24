@@ -1,8 +1,8 @@
 version: 2
 
 sources:
-  - name: real_estate
-    schema: raw 
+  - name: real_estate_db
+    schema: RAW 
     tables: 
-      - name: house_listing
-        identifier: HOUSE_LISITING_RAW
+      - name: HOUSE_LISTING_JSON_RAW
+        identifier: HOUSE_LISTING_JSON_RAW
