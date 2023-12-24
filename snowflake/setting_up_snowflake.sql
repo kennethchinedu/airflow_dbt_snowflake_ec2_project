@@ -1,17 +1,18 @@
+-- Use an admin role
 USE ROLE ACCOUNTADMIN;
 
--- creating the `transform` role
+-- Create the `transform` role
 CREATE ROLE IF NOT EXISTS transform;
 GRANT ROLE TRANSFORM TO ROLE ACCOUNTADMIN;
 
--- Creating the default warehouse 
+-- Create the default warehouse if necessary
 CREATE WAREHOUSE IF NOT EXISTS COMPUTE_WH;
 GRANT OPERATE ON WAREHOUSE COMPUTE_WH TO ROLE TRANSFORM;
 
--- Creating the `dbt` user and assign to role
+-- Create the `dbt` user and assign to role
 CREATE USER IF NOT EXISTS dbt
-  PASSWORD='******'
-  LOGIN_NAME='****'
+  PASSWORD='****'
+  LOGIN_NAME='dbt'
   MUST_CHANGE_PASSWORD=FALSE
   DEFAULT_WAREHOUSE='COMPUTE_WH'
   DEFAULT_ROLE='transform'
@@ -19,7 +20,7 @@ CREATE USER IF NOT EXISTS dbt
   COMMENT='DBT user used for data transformation';
 GRANT ROLE transform to USER dbt;
 
--- Creating our database and schemas
+-- Create our database and schemas
 CREATE DATABASE IF NOT EXISTS AIRBNB;
 CREATE SCHEMA IF NOT EXISTS AIRBNB.RAW;
 
@@ -30,7 +31,3 @@ GRANT ALL ON ALL SCHEMAS IN DATABASE REAL_ESTATE_DB to ROLE transform;
 GRANT ALL ON FUTURE SCHEMAS IN DATABASE REAL_ESTATE_DB to ROLE transform;
 GRANT ALL ON ALL TABLES IN SCHEMA REAL_ESTATE_DB.RAW to ROLE transform;
 GRANT ALL ON FUTURE TABLES IN SCHEMA REAL_ESTATE_DB.RAW to ROLE transform;
-
-
-
-
